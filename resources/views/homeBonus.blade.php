@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +9,9 @@
 <body>
   <header>
     <ul style="display: flex; justify-content:space-around">
-      @foreach ($links as $link)
-          <li><a href="">{{ $link }}</a></li>
-      @endforeach
+      <li><a href="">Contatti</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">area membri</a></li>
     </ul>
   </header>
   <main style="text-align: center">
@@ -21,5 +20,3 @@
   
 </body>
 </html>
-
-

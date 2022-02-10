@@ -13,13 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     $data = [
+//         'links' => [
+//             'contatti',
+//             'news',
+//             'area membri'
+//         ]
+//     ];
+//     return view('home', $data);
+// });
+
 Route::get('/', function () {
-    $data = [
-        'links' => [
-            'contatti',
-            'news',
-            'area membri'
-        ]
-    ];
-    return view('home', $data);
+    return view('homeBonus');
 });
