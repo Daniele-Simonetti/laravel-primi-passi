@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     $data = [
-//         'links' => [
-//             'contatti',
-//             'news',
-//             'area membri'
-//         ]
-//     ];
-//     return view('home', $data);
-// });
+Route::get('/', function () {
+    $data = [
+        'links' => [
+            'contatti',
+            'news',
+            'area membri'
+        ]
+    ];
+    return view('home', $data);
+});
 
 Route::get('/contatti', function () {
     return view('contatti');
@@ -36,10 +36,6 @@ Route::get('/areamembri', function () {
     return view('areamembri');
 })-> name('members'); 
 
-Route::get('/homepage', function () {
-    return view('homeBonus');
-})->name('home');
-
 Route::get('/', function () {
     return view('homeBonus');
-});
+})->name('home');
