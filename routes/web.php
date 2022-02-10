@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = [
+        'links' => [
+            'contatti',
+            'news',
+            'area membri'
+        ]
+    ];
+    return view('home', $data);
 });
