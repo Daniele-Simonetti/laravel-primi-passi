@@ -24,6 +24,22 @@ use Illuminate\Support\Facades\Route;
 //     return view('home', $data);
 // });
 
+Route::get('/contatti', function () {
+    return view('contatti');
+})-> name('contact'); 
+
+Route::get('/news', function () {
+    return view('news');
+})-> name('news'); 
+
+Route::get('/areamembri', function () {
+    return view('areamembri');
+})-> name('members'); 
+
+Route::get('/homepage', function () {
+    return view('homeBonus');
+})->name('home');
+
 Route::get('/', function () {
     return view('homeBonus');
 });

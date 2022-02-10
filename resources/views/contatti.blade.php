@@ -12,10 +12,11 @@
       <li><a href="{{ route('contact') }}">Contatti</a></li>
       <li><a href="{{ route('news') }}">News</a></li>
       <li><a href="{{ route('members') }}">Area Membri</a></li>
+      <li><a href="{{ route('home') }}">Home</a></li>
     </ul>
   </header>
   <main style="text-align: center">
-    <h1 style="color: red;">HOME PAGE</h1>
+    <h1 style="color: red;">CONTATTI</h1>
   </main>
   
 </body>
