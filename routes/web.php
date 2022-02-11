@@ -36,6 +36,6 @@ Route::get('/areamembri', function () {
     return view('areamembri');
 })-> name('members'); 
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('homeBonus');
 })->name('home');
